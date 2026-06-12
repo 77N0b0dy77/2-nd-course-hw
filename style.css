@@ -109,6 +109,9 @@ body {
   padding-top: 94px;
   padding-left: 119px;
 }
+.games__heading-mob {
+  display: none;
+}
 .games__description {
   color: #FFFFFF;
   position: absolute;
@@ -242,7 +245,6 @@ body {
     font-weight: 700;
     font-style: Bold;
     font-size: 40px;
-    leading-trim: NONE;
     line-height: 100%;
     letter-spacing: 0px;
     text-align: center;
