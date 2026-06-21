@@ -1,0 +1,74 @@
+@media (max-width: 376px) {
+
+    .center {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .header {
+        min-width: 376px;
+        min-height: 700px;
+
+        &__stars {
+            display: none;
+        }
+
+        &__welc {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 147px;
+            width: 296px;
+            height: 280px;
+        }
+
+        &__desc {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+            vertical-align: middle;
+            padding-bottom: 36px;
+        }
+
+        &__btn {
+            min-width: 285px;
+            min-height: 55px;
+            margin-top: 64px;
+            border-radius: 60px;
+            border-width: 1px;
+            padding-top: 16px;
+            padding-right: 28px;
+            padding-bottom: 16px;
+            padding-left: 28px;
+            background-color: #202027;
+            color: white;
+            font-size: 16px;
+            font-family: 'Montserrat';
+            font-weight: 600;
+
+            &:hover {
+                background-color: transparent;
+                color: black;
+            }
+
+            &-link {
+                padding-left: 46px;
+            }
+
+        }
+
+    }
+
+    .games {
+        display: none;
+    }
+}
