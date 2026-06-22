@@ -232,14 +232,13 @@ body {
   background-color: #202027;
   min-height: 1470px;
   min-width: 1440px;
-  padding-bottom: 144px;
+  padding-bottom: 112px;
 }
 .mini__name {
   font-family: Montserrat;
   font-weight: 700;
   font-style: Bold;
   font-size: 48px;
-  leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 0px;
   vertical-align: middle;
@@ -251,7 +250,6 @@ body {
   font-weight: 700;
   font-style: Bold;
   font-size: 64px;
-  leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 0px;
   vertical-align: middle;
@@ -265,7 +263,6 @@ body {
   font-weight: 400;
   font-style: Regular;
   font-size: 24px;
-  leading-trim: NONE;
   line-height: 32px;
   letter-spacing: 0px;
   vertical-align: middle;
@@ -303,7 +300,6 @@ body {
   font-weight: 700;
   font-style: Bold;
   font-size: 48px;
-  leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 0px;
   vertical-align: middle;
@@ -315,7 +311,6 @@ body {
   font-weight: 400;
   font-style: Regular;
   font-size: 24px;
-  leading-trim: NONE;
   line-height: 32px;
   letter-spacing: 0px;
   vertical-align: middle;
@@ -352,7 +347,6 @@ body {
   font-weight: 600;
   font-style: SemiBold;
   font-size: 24px;
-  leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 0px;
   text-align: center;
