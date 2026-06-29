@@ -5,6 +5,11 @@
         padding-right: 40px;
     }
 
+    svg {
+        height: 287px;
+        width: 343px;
+    }
+
     .header {
         min-width: 376px;
         min-height: 700px;
@@ -70,5 +75,105 @@
 
     .games {
         display: none;
+    }
+
+    .mini {
+        min-width: 343px;
+        padding-bottom: 10px;
+
+        &__heading {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 100%;
+            vertical-align: middle;
+            padding-bottom: 48px;
+            padding-left: 16px;
+        }
+
+        &__carts-right {
+            flex-direction: column;
+            justify-content: flex-end;
+            max-height: 626px;
+            max-width: 343px;
+            margin-left: 19px;
+            gap: 0;
+            margin-bottom: 24px;
+        }
+
+        &__carts-left {
+            flex-direction: column;
+            max-height: 626px;
+            max-width: 343px;
+            margin-left: 19px;
+            margin-bottom: 0px;
+            gap: 0;
+            margin-bottom: 24px;
+        }
+
+        &__carts-text {
+            padding: 29px;
+        }
+
+        &__name {
+            font-family: Montserrat;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 32px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            margin-bottom: 16px;
+
+        }
+
+        &__description {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: middle;
+        }
+
+        &__btn {
+            min-width: 285px;
+            min-height: 55px;
+            margin-top: 32px;
+            border-radius: 60px;
+            border-width: 1px;
+            padding-top: 16px;
+            padding-right: 28px;
+            padding-bottom: 16px;
+            padding-left: 28px;
+            background-color: #202027;
+            color: white;
+            font-size: 16px;
+            font-family: "Montserrat";
+            font-weight: 600;
+            margin-left: -50px;
+        }
+    }
+
+    .footer {
+        min-width: 343px;
+        min-height: 100px;
+
+        &__text {
+            font-family: Montserrat;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0px;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 49px;
+        }
+
     }
 }
