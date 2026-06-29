@@ -6,7 +6,7 @@
     }
 
     svg {
-        height: 285px;
+        height: 287px;
         width: 343px;
     }
 
@@ -94,7 +94,7 @@
         &__carts-right {
             flex-direction: column;
             justify-content: flex-end;
-            max-height: 567px;
+            max-height: 626px;
             max-width: 343px;
             margin-left: 19px;
             gap: 0;
@@ -103,8 +103,7 @@
 
         &__carts-left {
             flex-direction: column;
-            justify-content: flex-end;
-            max-height: 567px;
+            max-height: 626px;
             max-width: 343px;
             margin-left: 19px;
             margin-bottom: 0px;
@@ -125,6 +124,7 @@
             line-height: 100%;
             letter-spacing: 0px;
             vertical-align: middle;
+            margin-bottom: 16px;
 
         }
 
