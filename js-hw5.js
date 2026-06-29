@@ -12,11 +12,13 @@ function min(a, b) {
 
 
 
-def check_even(n):
- if n% 2 == 0:
- return 'Число четное'
- else:
- return 'Число нечетное'
+function checkEvenOdd(n) {
+ if (n% 2 === 0) {
+ return 'Число четное';
+} else {
+ return 'Число нечетное';
+}
+}
 
 
  function printSquare(num) {
@@ -78,11 +80,11 @@ const circle1 = {
  radius: 5,
  
  getArea: function() {
- return Math.PI * this.Radius ** 2;
+ return Math.PI * this.radius ** 2;
 },
  
  getPerimeter: function() {
- return 2 * Math.PI * this.Radius;
+ return 2 * Math.PI * this.radius;
 }
 };
 
@@ -91,10 +93,10 @@ const circle2 = {
  radius: 10,
  
  getArea: function() {
- return Math.PI * this.Radius ** 2;
+ return Math.PI * this.radius ** 2;
 },
  
  getPerimeter: function() {
- return 2 * Math.PI * this.Radius;
+ return 2 * Math.PI * this.radius;
 }
 };
