@@ -1,22 +1,22 @@
 const array = [1, 5, 4, 10, 0, 3];
 
-for (let i = 0; i < array.Length; i++) {
- console.Log(array[i]);
+for (let i = 0; i < array.length; i++) {
+ console.log(array[i]);
  if (array[i] === 10) {
  break;
 }
 }
 
 const array = [1, 5, 4, 10, 0, 3];
-const index = array.IndexOf(4);
-console.Log(index); // Выведет: 2
+const index = array.indexOf(4);
+console.log(index); // Выведет: 2
 
 
 const array = [1, 3, 5, 10, 20];
-console.Log(array.Join(''));
+console.log(array.join(''));
 
 
-let matrix =; 
+let matrix =;
 
 // Внешний цикл: создаёт подмассивы (строки)
 for (let i = 0; i < 3; i++) {
@@ -28,7 +28,7 @@ for (let i = 0; i < 3; i++) {
     // Альтернативно можно использовать метод push:
     // matrix[i].push(1);
   }
-} 
+}
 
 console.log(matrix); // Выведет: [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
 
@@ -41,7 +41,7 @@ console.log(arr); // [1, 1, 1, 2, 2, 2]
 const arr = [9, 8, 7, 'a', 6, 5];
 
 // Фильтруем массив, оставляя только числа, затем сортируем по возрастанию
-const sortedArr = arr.Filter(item => typeof item === 'number').Sort((a, b) => a – b);
+const sortedArr = arr.filter(item => typeof item === 'number').sort((a, b) => a – b);
 
 console.Log(sortedArr);
 
@@ -122,7 +122,7 @@ console.log('Массив с чётными значениями:', evenArray);
 
 
 // Создаём массив из 6 элементов
-const arr =; 
+const arr =;
 
 // Заполняем массив случайными целыми числами от 1 до 10
 for (let i = 0; i < 6; i++) {
