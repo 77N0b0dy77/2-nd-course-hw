@@ -1,3 +1,4 @@
+//1
 const array = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < array.length; i++) {
@@ -7,11 +8,12 @@ for (let i = 0; i < array.length; i++) {
 }
 }
 
+//2
 const array = [1, 5, 4, 10, 0, 3];
 const index = array.indexOf(4);
-console.log(index); // Выведет: 2
+console.Log(index); // Выведет: 2
 
-
+//3
 const array = [1, 3, 5, 10, 20];
 console.log(array.join(''));
 
