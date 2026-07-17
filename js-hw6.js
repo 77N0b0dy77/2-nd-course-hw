@@ -11,11 +11,11 @@ for (let i = 0; i < array.length; i++) {
 //2
 const array = [1, 5, 4, 10, 0, 3];
 const index = array.indexOf(4);
-console.Log(index); // Выведет: 2
+console.log(index); // Выведет: 2
 
 //3
 const array = [1, 3, 5, 10, 20];
-console.log(array.join(''));
+console.log(array.join(' '));
 
 
 let matrix =;
@@ -35,24 +35,24 @@ for (let i = 0; i < 3; i++) {
 console.log(matrix); // Выведет: [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
 
 
-let arr = [1, 1, 1];
-arr.push(2, 2, 2);
-console.log(arr); // [1, 1, 1, 2, 2, 2]
+let arr =; 
 
+for (let i = 0; i < 3; i++) {
+  arr[i] =; // Создаём подмассив для каждой строки
+  for (let j = 0; j < 3; j++) {
+    arr[i][j] = 1; // Заполняем подмассив единицами
+  }
+} 
 
-const arr = [9, 8, 7, 'a', 6, 5];
+console.log(arr); // Выведет: [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
 
-// Фильтруем массив, оставляя только числа, затем сортируем по возрастанию
-const sortedArr = arr.filter(item => typeof item === 'number').sort((a, b) => a – b);
-
-console.Log(sortedArr);
 
 
 const array = [9, 8, 7, 6, 5];
 
 const userInput = prompt('Угадай число из массива [9, 8, 7, 6, 5]:');
 
-if (array.Includes(parseInt(userInput))) {
+if (array.includes(parseInt(userInput))) {
  alert('Угадал');
 } else {
  alert('Не угадал');
@@ -60,8 +60,8 @@ if (array.Includes(parseInt(userInput))) {
 
 
 const str = 'abcdef';
-const reversedStr = str.Split('').Reverse().Join('');
-console.Log(reversedStr);
+const reversedStr = str.split('').reverse().join('');
+console.log(reversedStr);
 
 
 const arr = [[1, 2, 3], [4, 5, 6]];
@@ -72,11 +72,11 @@ console.log(result);
 const array = [3, 7, 1, 9, 4, 6, 2, 8, 5, 10];
 
 // Перебираем массив с помощью цикла for
-for (let i = 0; i < array.Length; i++) {
+for (let i = 0; i < array.length; i++) {
  // Проверяем, есть ли следующий элемент (чтобы не выйти за границы массива)
- if (i + 1 < array.Length) {
+ if (i + 1 < array.length) {
  // Выводим в консоль сумму текущего и следующего элементов
- console.Log(`Сумма элементов ${array[i]} и ${array[i + 1]}: ${array[i] + array[i + 1]}`);
+ console.log(`Сумма элементов ${array[i]} и ${array[i + 1]}: ${array[i] + array[i + 1]}`);
 }
 }
 
@@ -108,39 +108,22 @@ for (let i = 0; i < 10; i++) {
   originalArray.push(randomNumber);
 } 
 
-// Создаём массив для чётных значений
-const evenArray =; 
-
-// Проходим по исходному массиву и добавляем чётные числа в новый
-for (let i = 0; i < originalArray.length; i++) {
-  if (originalArray[i] % 2 === 0) {
-    evenArray.push(originalArray[i]);
-  }
-}
+// Фильтруем чётные значения и сохраняем в новый массив
+const evenArray = originalArray.filter(num => num % 2 === 0);
 
 // Выводим оба массива в консоль
 console.log('Исходный массив:', originalArray);
 console.log('Массив с чётными значениями:', evenArray);
 
 
-// Создаём массив из 6 элементов
-const arr =;
+// Создаём массив из 6 элементов со случайными целыми числами от 1 до 10
+const arr = Array.from({ length: 6 }, () => Math.floor(Math.random() * 10) + 1);
 
-// Заполняем массив случайными целыми числами от 1 до 10
-for (let i = 0; i < 6; i++) {
-  // Формула: Math.random() * (max - min + 1) + min
-  // Чтобы получить целое число:
-  const randomInt = Math.floor(Math.random() * 10) + 1;
-  arr.push(randomInt);
-}
-
-// Выводим массив в консоль
-console.log(arr);
-
-// Находим среднее арифметическое
+// Вычисляем среднее арифметическое
 const sum = arr.reduce((acc, num) => acc + num, 0);
 const average = sum / arr.length;
 
-// Выводим результат в консоль
+// Выводим массив и результат в консоль
+console.log('Массив:', arr);
 console.log('Среднее арифметическое:', average);
 
