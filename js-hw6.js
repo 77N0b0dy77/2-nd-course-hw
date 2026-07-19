@@ -18,11 +18,11 @@ const array = [1, 3, 5, 10, 20];
 console.log(array.join(' '));
 
 
-let matrix =;
+let matrix = ;
 
 // Внешний цикл: создаёт подмассивы (строки)
 for (let i = 0; i < 3; i++) {
-  matrix[i] =; // Создаём новый подмассив для текущей строки
+  matrix[i] = ; // Создаём новый подмассив для текущей строки
   
   // Внутренний цикл: заполняем подмассив элементами
   for (let j = 0; j < 3; j++) {
@@ -35,10 +35,10 @@ for (let i = 0; i < 3; i++) {
 console.log(matrix); // Выведет: [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
 
 
-let arr =; 
+let arr = ;
 
 for (let i = 0; i < 3; i++) {
-  arr[i] =; // Создаём подмассив для каждой строки
+  arr[i] = ; // Создаём подмассив для каждой строки
   for (let j = 0; j < 3; j++) {
     arr[i][j] = 1; // Заполняем подмассив единицами
   }
@@ -101,7 +101,7 @@ function getNegativeNumbers(arr) {
 
 
 // Создаём исходный массив из 10 значений
-const originalArray =;
+const originalArray = ;
 for (let i = 0; i < 10; i++) {
   // Генерируем случайное число от 0 до 10 (не включая 10) и преобразуем в целое
   const randomNumber = Math.floor(Math.random() * 10);
