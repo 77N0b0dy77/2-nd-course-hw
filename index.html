@@ -1725,8 +1725,9 @@
             <div class="mini__carts-text">
                 <h2 class="mini__name">Угадай число</h2>
                 <p class="mini__description">Попробуй угадать случайное<br>число от 1 до 100.</p>
-                <a href="#games-1" class="mini__btn-link center">
-                    <button class="mini__btn">Играть!</button>
+                <a href="#games-1 class="mini__btn-link center">
+                    <button class="mini__btn" onclick="startGame1()">Играть!</button>
+                    <script src="./scriptGame.js"></script>
                 </a>
             </div>
         </section>
@@ -1888,7 +1889,8 @@
                 <h2 class="mini__name">Простая<br>арифметика</h2>
                 <p class="mini__description">Попробуй решить простые<br>арифметические задачи.</p>
                 <a href="#games-2" class="mini__btn-link center">
-                    <button class="mini__btn">Играть!</button>
+                    <button class="mini__btn" onclick="startGame2()">Играть!</button>
+                    <script src="./scriptGame.js"></script>
                 </a>
             </div>
         </section>
@@ -2053,7 +2055,8 @@
                 <h2 class="mini__name">Переверни текст</h2>
                 <p class="mini__description">Попробуй ввести текст, который<br>будет перевернут.</p>
                 <a href="#games-3" class="mini__btn-link center">
-                    <button class="mini__btn">Играть!</button>
+                    <button class="mini__btn" onclick="startGame3()">Играть!</button>
+                    <script src="./scriptGame.js"></script>
                 </a>
             </div>
         </section>
@@ -2510,51 +2513,12 @@
 
             </div>
             <div class="mini__carts-text" id="mySection">
-                <h2 class="mini__name" >Простая<br>викторина</h2>
+                <h2 class="mini__name">Простая<br>викторина</h2>
                 <p class="mini__description">Отвечай на вопросы викторины<br>с вариантами ответов.</p>
                 <a href="#games-5" class="mini__btn-link center">
-                    <button class="mini__btn" onclick="doSomethingCool(event)">Играть!</button>
-                    <script>
-                        function doSomethingCool(event) {
-                            event.preventDefault(); // Предотвращаем перезагрузку страницы
-                            // Массив вопросов с вариантами ответов и правильными ответами
-                            const quiz = [
-                                {
-                                    question: "Какой цвет небо?",
-                                    options: ["1. Красный", "2. Синий", "3. Зелёный"],
-                                    correctAnswer: 2 // номер правильного ответа (Синий)
-                                },
-                                {
-                                    question: "Сколько дней в неделе?",
-                                    options: ["1. Шесть", "2. Семь", "3. Восемь"],
-                                    correctAnswer: 2 // номер правильного ответа (Семь)
-                                },
-                                {
-                                    question: "Сколько у человека пальцев на одной руке?",
-                                    options: ["1. Четыре", "2. Пять", "3. Шесть"],
-                                    correctAnswer: 2 // номер правильного ответа (Пять)
-                                }
-                            ];
+                    <button class="mini__btn" onclick="startGame5()">Играть!</button>
+                    <script src="./scriptGame.js"></script>
 
-                            // Инициализация счётчика правильных ответов
-                            let correctAnswers = 0;
-
-                            // Цикл по всем вопросам
-                            for (let i = 0; i < quiz.length; i++) {
-                                // Запрос ответа у пользователя
-                                const userAnswer = prompt(quiz[i].question);
-
-                                // Проверка ответа: сравниваем введённый номер с правильным
-                                if (userAnswer === quiz[i].correctAnswer.toString()) {
-                                    correctAnswers++;
-                                }
-                            }
-
-                            // Вывод итогового результата
-                            alert(`Вы набрали ${correctAnswers} правильных ответов из ${quiz.length}.`);
-
-                        }
-                    </script>
                 </a>
             </div>
         </section>
