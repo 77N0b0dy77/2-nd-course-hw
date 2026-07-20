@@ -40,62 +40,87 @@ function startGame1() {
 // Игра 2 Простая арифметика
 
 function startGame2() {
-    function generateRandomTask() {
-        const operations = [
-            {symbol: '+', func: (a, b) => a + b},
-            {symbol: '-', func: (a, b) => a - b},
-            {symbol: '*', func: (a, b) => a * b},
-            {symbol: '/', func: (a, b) => a / b},
-        ];
+  function generateRandomTask() {
+    const operations = [
+      { symbol: '+', func: (a, b) => a + b },
+      { symbol: '-', func: (a, b) => a - b },
+      { symbol: '*', func: (a, b) => a * b },
+      { symbol: '/', func: (a, b) => a / b },
+    ];
 
-        const randomOperator = operations[Math.floor(Math.random() * operations.length)];
+    const randomOperator = operations[Math.floor(Math.random() * operations.length)];
 
-        const num1 = Math.floor(Math.random() * 10) + 1; 
-        const num2 = Math.floor(Math.random() * 10) + 1; 
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
 
-        let task;
-        let correctAnswer;
+    let task;
+    let correctAnswer;
 
-        if (randomOperator.symbol === '/') {
-            task = `${num1 * num2} ${randomOperator.symbol} ${num2}`;
-            correctAnswer = num1;
-
-
-        } else {
-            task = `${num1} ${randomOperator.symbol} ${num2}`;
-            correctAnswer = randomOperator.func(num1, num2);
-        }
-
-
-        return { task, correctAnswer };
-
+    if (randomOperator.symbol === '/') {
+      // Чтобы деление было нацело: num1 * num2 / num2 = num1
+      task = `${num1 * num2} ${randomOperator.symbol} ${num2}`;
+      correctAnswer = num1;
+    } else {
+      task = `${num1} ${randomOperator.symbol} ${num2}`;
+      correctAnswer = randomOperator.func(num1, num2);
     }
-    
-    function checkUserAnswer() {
-        const {task, correctAnswer} = generateRandomTask();
-        const userAnswer = parseFloat(prompt(`Решите задачу: ${task}`));
 
-        if (userAnswer === correctAnswer) {
-            alert(`Правильный ответ!`);
-        } else {
-            alert(`Неправильный ответ! Правильный ответ: ${correctAnswer}`);
-        }
+    return { task, correctAnswer };
+  }
+
+  function checkUserAnswer() {
+    const { task, correctAnswer } = generateRandomTask();
+    const userInput = prompt(`Решите задачу: ${task}`);
+
+    // Если пользователь нажал «Отмена» — prompt вернёт null
+    if (userInput === null) {
+      return; // просто выходим, без сообщений
     }
-    checkUserAnswer();
+
+    // Убираем пробелы и проверяем, что строка не пустая
+    const trimmedInput = userInput.trim();
+    if (!trimmedInput) {
+      alert('Вы не ввели ответ.');
+      return;
+    }
+
+    const userAnswer = parseFloat(trimmedInput);
+
+    // Если parseFloat не смог преобразовать строку в число (например, ввели текст)
+    if (Number.isNaN(userAnswer)) {
+      alert('Пожалуйста, введите число.');
+      return;
+    }
+
+    // Для деления с плавающей точкой лучше сравнивать с допуском, но тут числа простые
+    if (userAnswer === correctAnswer) {
+      alert('Правильный ответ!');
+    } else {
+      alert(`Неправильный ответ! Правильный ответ: ${correctAnswer}`);
+    }
+  }
+
+  checkUserAnswer();
 }
 
 // Игра 3 Переверни текст
 
 function startGame3() {
-    const userWord = prompt("Введите слово!");
+  const userWord = prompt("Введите слово!");
 
-    if (userWord) {
-        const reversedWord = userWord.split('').reverse().join('');
-        alert(`Перевернутое слово: ${reversedWord}`);
-    } else {
-        alert("Вы не ввели слово.")
-    }
+  // Если пользователь нажал «Отмена», prompt вернёт null — сразу выходим из функции
+  if (userWord === null) {
+    return;
+  }
 
+  const trimmedWord = userWord.trim();
+
+  if (trimmedWord) {
+    const reversedWord = trimmedWord.split('').reverse().join('');
+    alert(`Перевёрнутое слово: ${reversedWord}`);
+  } else {
+    alert("Вы не ввели слово.");
+  }
 }
 
 // Игра 5 Викторина

@@ -156,7 +156,7 @@ body {
   background-color: #FFFFFF;
   border-radius: 30px;
   width: 378px;
-  height: 551px;
+  height: 512px;
   transition: transform 0.5s;
 }
 .games__cards-two:hover {
@@ -186,7 +186,7 @@ body {
   background-color: #FFFFFF;
   border-radius: 30px;
   width: 378px;
-  height: 473px;
+  height: 512px;
   transition: transform 0.5s;
 }
 .games__cards-five:hover {
@@ -239,7 +239,7 @@ body {
   font-weight: 700;
   font-style: Bold;
   font-size: 48px;
-  line-height: 100%;
+  line-height: 59px;
   letter-spacing: 0px;
   vertical-align: middle;
   color: #202027;
