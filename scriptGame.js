@@ -123,6 +123,34 @@ function startGame3() {
   }
 }
 
+// Игра 4 Камень, ножницы, бумага
+
+
+function startGame4() {
+    const choises = ["камень","ножницы","бумага"];
+    const userChoise = prompt("Введите ваш выбор: камень, ножницы, бумага").toLowerCase();
+
+    if (!choises.includes(userChoise)) {
+        console.log("Неправильный выбор. Попробуйте еще раз!");
+        return;
+    }
+    const computerChoise = choises[Math.floor(Math.random() * choises.length)];
+
+    let result;
+
+    if (userChoise === computerChoise) {
+        result = "Ничья!";
+    } else if (
+        (userChoise === "камень" && computerChoise === "ножницы") || (userChoise === "ножницы" && computerChoise === "бумага") || (userChoise === "бумага" && computerChoise === "камень")
+    ) {
+        result = "Вы победили!";
+    } else {
+        result = "Вы проиграли!";
+    }
+    alert(`Ваш выбор: ${userChoise},\nКомпьютер выбрал: ${computerChoise}, \n${result}`);
+
+}
+
 // Игра 5 Викторина
 
 function startGame5() {
