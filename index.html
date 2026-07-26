@@ -83,6 +83,16 @@
         <a href="#games" class="header__btn-link center">
             <button class="header__btn">Поехали!</button>
         </a>
+              <section class="scrol-bar center">
+        <div class="ani-strip">
+          <span class="ani-strip__text">ВИКТОРИНА</span>
+          <span class="ani-strip__text">УГАДАЙ ЧИСЛО</span>
+          <span class="ani-strip__text">ПЕРЕВЕРНИ ТЕКСТ</span>
+          <span class="ani-strip__text">ПРОСТАЯ АРИФМЕТИКА</span>
+          <span class="ani-strip__text">КАМЕНЬ, НОЖНИЦЫ, БУМАГА</span>
+          <span class="ani-strip__text">ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</span>
+        </div>
+      </section>
         <!-- <article class="header__footer">
             <p class="header__footer-text">Викторина</p>
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2519,7 +2529,6 @@
                 <a href="#games-5" class="mini__btn-link center">
                     <button class="mini__btn" onclick="startGame5()">Играть!</button>
                     <script src="./scriptGame.js"></script>
-
                 </a>
             </div>
         </section>
@@ -2610,8 +2619,9 @@
             <div class="mini__carts-text" id="game6">
                 <h2 class="mini__name">Генератор <br>случайных <br>цветов</h2>
                 <p class="mini__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                <a href="#games-6" class="mini__btn-link center">
-                    <button class="mini__btn">Играть!</button>
+                <a href="#" class="mini__btn-link center">
+                    <button class="mini__btn" id onclick="changeRandomColor()">Играть!</button>
+                    <script src="./scriptGame.js" defer></script>
                 </a>
             </div>
         </section>

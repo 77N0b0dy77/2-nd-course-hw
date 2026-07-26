@@ -193,3 +193,28 @@ function startGame5() {
     }
     alert(`Вы ответили правильно на ${score} вопросов из ${quiz.length}`)
 }
+
+
+// Игра 6 Генератор случайного цвета
+
+
+
+// Функция для генерации HEX-цвета (гарантированно 6 символов)
+function getRandomHex() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+
+  const toHex = (num) => num.toString(16).padStart(2, '0');
+
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+}
+
+// Функция, которую вызываем по onclick
+
+function changeRandomColor() {
+  const container = document.querySelector('.mini');
+  if (!container) return;
+
+  container.style.backgroundColor = getRandomHex();
+}
