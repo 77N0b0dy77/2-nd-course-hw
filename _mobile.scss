@@ -73,6 +73,23 @@
 
     }
 
+ .scrol-bar {
+    overflow: hidden;
+  }
+  .ani-strip {
+    // margin-top: 131px;
+    //width: 1717px;
+    height: 51px;
+    &__text {
+      font-size: 16px;
+      padding-right: 27px;
+      &::after {
+        content: url(./Img/Star-mobile.svg);
+        padding-left: 27px;
+      }
+    }
+  }
+
     .games {
         display: none;
     }

@@ -100,6 +100,46 @@ body {
 
 }
 
+.scrol-bar {
+  background-color: rgb(188, 236, 48);
+  max-width: max-content;
+  overflow-x: hidden;
+  margin-top: 167px;
+  
+}
+.ani-strip {
+  // margin-top: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
+  animation: strip-move 10s linear infinite;
+  height: 90px;
+
+  &__text {
+    color: rgb(32, 32, 39);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 51px;
+    &::after {
+      padding-left: 51px;
+    }
+  }
+}
+
+@keyframes strip-move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .games {
     background-color: #202027;
     min-height: 1470px;
